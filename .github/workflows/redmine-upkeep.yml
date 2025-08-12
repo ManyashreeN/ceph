@@ -85,6 +85,7 @@ jobs:
              python3 ceph/src/script/redmine-upkeep.py
              --github-action
              --git-dir=./ceph/
+             --limit=1000
         env:
           REDMINE_API_KEY: ${{ secrets.REDMINE_API_KEY_BACKPORT_BOT }}
 
@@ -94,6 +95,7 @@ jobs:
              python3 ceph/src/script/redmine-upkeep.py
              --github-action
              --git-dir=./ceph/
+             --limit=1000
         env:
           REDMINE_API_KEY: ${{ secrets.REDMINE_API_KEY_BACKPORT_BOT }}
 
